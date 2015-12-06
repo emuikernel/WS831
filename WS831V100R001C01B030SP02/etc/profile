@@ -1,0 +1,72 @@
+# /etc/profile: system-wide .profile file for the Bourne shells
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+LUA_PATH="/etc/lua/?.lua;/html/lib/?.lua;/html/lua/?.lua"
+export LUA_PATH
+
+echo -l "boot start running profile..."
+
+mount -t tmpfs none /dev
+mount -t proc /proc /proc
+mount -t usbfs none /proc/bus/usb
+mount -t sysfs none /sys
+mount -t tmpfs none /var
+mount -t tmpfs none /tmp
+mount -t tmpfs none /mnt
+
+makedevs -d /etc/devicetable /
+
+echo -l "boot start running starbsp..."
+startbsp
+echo -l "boot running starbsp..."
+
+cp /etc/passwd1 /var/passwd
+cp /etc/group1 /var/group
+test -e /etc/webimg1 && cp /etc/webimg1 /var/webimg
+test -e /etc/webidx1 && cp /etc/webidx1 /var/webidx
+test -e /etc/Wireless/RT2860AP/RT2860AP.dat && cp /etc/Wireless/RT2860AP/RT2860AP.dat /var/Wireless/
+
+echo 32  > /proc/sys/kernel/msgmni
+
+echo "Loading drivers and kernel modules... "
+#add by c00164495 for HG622u multi acsurl 2011-01-30
+ echo > /var/acsurl
+ ifconfig lo 127.0.0.1 netmask 255.0.0.0 broadcast 127.255.255.255 up
+
+#add for support chinese charset and ntfs fat ntfs filesystem 
+#test -e /lib/kernel/fs/fat/fat.ko && insmod /lib/kernel/fs/fat/fat.ko
+#test -e /lib/kernel/fs/vfat/vfat.ko && insmod /lib/kernel/fs/vfat/vfat.ko
+#test -e /lib/kernel/fs/ntfs/ntfs.ko && insmod /lib/kernel/fs/ntfs/ntfs.ko
+#test -e /lib/kernel/fs/nls/nls_cp936.ko && insmod /lib/kernel/fs/nls/nls_cp936.ko
+ 
+#test -e /lib/kernel/drivers/usb/serial/option.ko && insmod /lib/kernel/drivers/usb/serial/option.ko
+#test -e /lib/kernel/fs/fuse/fuse.ko && insmod /lib/kernel/fs/fuse/fuse.ko
+test -e /lib/kernel/net/softqos/hi_ksoft_qos.ko && insmod /lib/kernel/net/softqos/hi_ksoft_qos.ko
+
+#hi_cli /home/cli/api/diagnose/mem -v addr 0x1300001c data 0x000008bf
+#sleep 2
+
+#hi_cli /home/cli/api/intf/addext -v fatherifname eth0 ifname wl0 extname rt-ssid0 psdport 1
+#hi_cli /home/cli/accel/accel_set -v hw 0 sw 1
+
+#hi_cli /home/cli/api/diagnose/mem -v addr 0x13200010 data 0x00000000
+
+hi_xpon
+
+#Create LAN ETH PORT
+#Create WAN ETH PORT
+#Create WAN DSL PORT
+#Create WLAN PORT
+hsanportinit&
+
+/etc/insmod_all.sh &
+echo -l "boot running mic..."
+
+ln -sf /dev/mtd9 /dev/caldata
+test -e /bin/usbom && usbom &
+mic
+
+echo "Done"
+
+

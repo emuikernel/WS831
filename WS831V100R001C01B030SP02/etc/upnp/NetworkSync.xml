@@ -1,0 +1,1411 @@
+<scpd>
+    <serviceStateTable>
+        <stateVariable sendEvents="no">
+            <name>Enable</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>Standard</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>NetworkSyncCode</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ManufacturerOUI</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>DeviceType</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>SerialNumber</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>HardwareVersion</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>SoftwareVersion</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>UpTime</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ProtocolVersion</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>SupportedRFBand</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>SupportedWorkingMode</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>SupportedSSIDNumber</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>TransmitPowerSupported</name>
+            <dataType>string</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>DeviceStatus</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>WorkingMode</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>InternetAccessMode</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>SignalIntensity</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>DHCPServerEnable</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ChannelWidth</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>WlanConfigurationEntryNum</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>CurrentChannel</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>TransmitPower</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>SSID</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>QueryType</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="yes">
+            <name>WlanConfigurationIndex</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>CanUsedForCover</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>UsedForCover</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>BSSID</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>AutoChannelEnable</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>Channel</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>SSIDAdvertisementEnabled</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>STAIsolation</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>RegulatoryDomain</name>
+            <dataType>string</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>WMMEnable</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>BeaconType</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>BasicEncryptionModes</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>BasicAuthenticationMode</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>WPAEncryptionModes</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>WPAAuthenticationMode</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>IEEE11iEncryptionModes</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>IEEE11iAuthenticationMode</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MixEncryptionModes</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MixAuthenticationMode</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>DtimPeriod</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>BeaconPeriod</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>FragThreshold</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>RTSThreshold</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ActionType</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ErrorCode</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ErrorDescription</name>
+            <dataType>string</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>MacFilterEnable</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MacFilterPolicy</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MacFilterEntries</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MaxAssociateNum</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>WEPEncryptionLevel</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>Key</name>
+            <dataType>string</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>NeighborInfo</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MacAddressPool</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>StaMacPool</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MacAddress</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>AccessType</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>AndroidIP</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>IsNeedAuth</name>
+            <dataType>boolean</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>TopologyInfo</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>URLInfo</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>Rssi</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>Rate</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>AssociatedDevice</name>
+            <dataType>string</dataType>
+        </stateVariable>
+
+        <stateVariable sendEvents="no">
+            <name>TotalBytesSent</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>TotalBytesReceived</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>TotalPacketsSent</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>TotalPacketsReceived</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ErrorsSent</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>ErrorsReceived</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>DiscardPacketsSent</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>DiscardPacketsReceived</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MacKickEntries</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>MacKickTime</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>FbtMode</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>FbtRSSIThreshold</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>FbtMacEntries</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="yes">
+            <name>FbtNotifyMac</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="yes">
+            <name>FbtChannel</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="yes">
+            <name>FbtRSSI</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="yes">
+            <name>FbtNotifyType</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>UnassociatedDevice</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>RFBand</name>
+            <dataType>string</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>FbtScanInterval</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+        <stateVariable sendEvents="no">
+            <name>WEPKeyIndex</name>
+            <dataType>ui4</dataType>
+        </stateVariable>
+		<stateVariable sendEvents="no">
+			<name>ManagerUser</name>
+			<dataType>string</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>ManagerPassword</name>
+			<dataType>string</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>ParaSyncOption</name>
+			<dataType>ui4</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>ParaSyncCode</name>
+			<dataType>ui4</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>ReserveString</name>
+			<dataType>string</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>ReserveCode</name>
+			<dataType>ui4</dataType>
+		</stateVariable>
+		
+		<stateVariable sendEvents="no">
+			<name>SessionID</name>
+			<dataType>string</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>Csrf_Token</name>
+			<dataType>string</dataType>
+		</stateVariable>
+		<stateVariable sendEvents="no">
+			<name>Csrf_Param</name>
+			<dataType>string</dataType>
+		</stateVariable>
+    </serviceStateTable>
+    <actionList>
+        <action>
+            <name>GetDeviceInfo</name>
+            <argumentList>
+                <argument>
+                    <name>NewNetworkSyncCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>NetworkSyncCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewManufacturerOUI</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ManufacturerOUI</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewDeviceType</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>DeviceType</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSerialNumber</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>SerialNumber</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewHardwareVersion</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>HardwareVersion</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSoftwareVersion</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>SoftwareVersion</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewUpTime</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>UpTime</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewProtocolVersion</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ProtocolVersion</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+		
+        <action>
+            <name>GetParamerterOption</name>
+            <argumentList>
+                <argument>
+                    <name>NewParaSyncOption</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ParaSyncOption</relatedStateVariable>
+                </argument>
+				<argument>
+                    <name>NewParaSyncCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ParaSyncCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewReserveString</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ReserveString</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewReserveCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ReserveCode</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+		
+        <action>
+            <name>GetDeviceCapability</name>
+            <argumentList>
+                <argument>
+                    <name>NewSupportedRFBand</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>SupportedRFBand</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSupportedWorkingMode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>SupportedWorkingMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSupportedSSIDNumber</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>SupportedSSIDNumber</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTransmitPowerSupported</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>TransmitPowerSupported</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetNetworkInfo</name>
+            <argumentList>
+                <argument>
+                    <name>NewDeviceStatus</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>DeviceStatus</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWorkingMode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>WorkingMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewInternetAccessMode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>InternetAccessMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSignalIntensity</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>SignalIntensity</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewDHCPServerEnable</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>DHCPServerEnable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewChannelWidth</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ChannelWidth</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWlanConfigurationEntryNum</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>WlanConfigurationEntryNum</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewCurrentChannel</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>CurrentChannel</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTransmitPower</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>TransmitPower</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetWLCIndexForCover</name>
+            <argumentList>
+                <argument>
+                    <name>NewSSID</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>SSID</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewRFBand</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>RFBand</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewQueryType</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>QueryType</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetWlanConfiguration</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSSID</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>SSID</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewCanUsedForCover</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>CanUsedForCover</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewUsedForCover</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>UsedForCover</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewEnable</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>Enable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewStandard</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>Standard</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewBSSID</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>BSSID</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMaxAssociateNum</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>MaxAssociateNum</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewAutoChannelEnable</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>AutoChannelEnable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewChannel</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>Channel</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSSIDAdvertisementEnabled</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>SSIDAdvertisementEnabled</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSTAIsolation</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>STAIsolation</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewRegulatoryDomain</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>RegulatoryDomain</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWMMEnable</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>WMMEnable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewBeaconType</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>BeaconType</relatedStateVariable>
+                </argument>
+
+                <argument>
+                    <name>NewBasicEncryptionModes</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>BasicEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewBasicAuthenticationMode</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>BasicAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWPAEncryptionModes</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>WPAEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWPAAuthenticationMode</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>WPAAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewIEEE11iEncryptionModes</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>IEEE11iEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewIEEE11iAuthenticationMode</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>IEEE11iAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMixEncryptionModes</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>MixEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMixAuthenticationMode</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>MixAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewDtimPeriod</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>DtimPeriod</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewBeaconPeriod</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>BeaconPeriod</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewRTSThreshold</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>RTSThreshold</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewFragThreshold</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>FragThreshold</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetWLCStats</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTotalBytesSent</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>TotalBytesSent</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTotalBytesReceived</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>TotalBytesReceived</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTotalPacketsSent</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>TotalPacketsSent</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTotalPacketsReceived</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>TotalPacketsReceived</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorsSent</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorsSent</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorsReceived</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorsReceived</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewDiscardPacketsSent</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>DiscardPacketsSent</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewDiscardPacketsReceived</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>DiscardPacketsReceived</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetWLCAssociatedDevice</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewAssociatedDevice</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>AssociatedDevice</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetNeighborInfo</name>
+            <argumentList>
+                <argument>
+                    <name>NewNeighborInfo</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>NeighborInfo</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetMacAddressPool</name>
+            <argumentList>
+                <argument>
+                    <name>NewMacAddressPool</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>MacAddressPool</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>GetStaMacPool</name>
+            <argumentList>
+                <argument>
+                    <name>NewStaMacPool</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>StaMacPool</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+            <action>
+            <name>GetTopology</name>
+            <argumentList>
+                <argument>
+                    <name>NewAndroidIP</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>AndroidIP</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewIsNeedAuth</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>IsNeedAuth</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTopologyInfo</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>TopologyInfo</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewURLInfo</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>URLInfo</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMacAddress</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>MacAddress</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewAccessType</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>AccessType</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+          <action>
+          <name>GetUplinkStatus</name>
+          <argumentList>
+              <argument>
+                  <name>NewRssi</name>
+                  <direction>out</direction>
+                  <relatedStateVariable>Rssi</relatedStateVariable>
+          </argument>
+          <argument>
+               <name>NewRate</name>
+               <direction>out</direction>
+               <relatedStateVariable>Rate</relatedStateVariable>
+               </argument>
+          </argumentList>
+          </action>
+
+            <action>
+            <name>GetManagerUserInfo</name>
+            <argumentList>
+                <argument>
+                    <name>NewManagerUser</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>ManagerUser</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewManagerPassword</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>ManagerPassword</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+		
+		<action>
+            <name>GetRestfulAuth</name>
+            <argumentList>
+                <argument>
+                    <name>NewSessionID</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>SessionID</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewCsrf_Token</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>Csrf_Token</relatedStateVariable>
+                </argument>
+				<argument>
+                    <name>NewCsrf_Param</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>Csrf_Param</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                    <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+		
+        <action>
+            <name>SetWlanFbtScanSta</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewFbtMacEntries</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>FbtMacEntries</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewFbtChannel</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>FbtChannel</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewFbtScanInterval</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>FbtScanInterval</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>SetNetworkInfo</name>
+            <argumentList>
+                <argument>
+                    <name>NewWorkingMode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WorkingMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewInternetAccessMode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>InternetAccessMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewDHCPServerEnable</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>DHCPServerEnable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewChannelWidth</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>ChannelWidth</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>SetWlanBaseConfiguration</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSSID</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>SSID</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewEnable</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>Enable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewUsedForCover</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>UsedForCover</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewStandard</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>Standard</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewBeaconType</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>BeaconType</relatedStateVariable>
+                </argument>
+
+                <argument>
+                    <name>NewBasicEncryptionModes</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>BasicEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewBasicAuthenticationMode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>BasicAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWPAEncryptionModes</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WPAEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWPAAuthenticationMode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WPAAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewIEEE11iEncryptionModes</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>IEEE11iEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewIEEE11iAuthenticationMode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>IEEE11iAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMixEncryptionModes</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MixEncryptionModes</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMixAuthenticationMode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MixAuthenticationMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWEPEncryptionLevel</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WEPEncryptionLevel</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWEPKeyIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WEPKeyIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewKey</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>Key</relatedStateVariable>
+                </argument>
+
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>SetWlanAdvancedConfiguration</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMaxAssociateNum</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MaxAssociateNum</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewAutoChannelEnable</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>AutoChannelEnable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewChannel</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>Channel</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewTransmitPower</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>TransmitPower</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewSSIDAdvertisementEnabled</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>SSIDAdvertisementEnabled</relatedStateVariable>
+                </argument>
+
+                <argument>
+                    <name>NewSTAIsolation</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>STAIsolation</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewRegulatoryDomain</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>RegulatoryDomain</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewWMMEnable</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WMMEnable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewDtimPeriod</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>DtimPeriod</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewBeaconPeriod</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>BeaconPeriod</relatedStateVariable>
+                </argument>
+
+                <argument>
+                    <name>NewRTSThreshold</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>RTSThreshold</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewFragThreshold</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>FragThreshold</relatedStateVariable>
+                </argument>
+
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>SetMacFilter</name>
+            <argumentList>
+                <argument>
+                    <name>NewMacFilterEnable</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MacFilterEnable</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMacFilterPolicy</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MacFilterPolicy</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMacFilterEntries</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MacFilterEntries</relatedStateVariable>
+                </argument>
+
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>Start</name>
+            <argumentList>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>Rollback</name>
+            <argumentList>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>Commit</name>
+            <argumentList>
+                <argument>
+                    <name>NewNetworkSyncCode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>NetworkSyncCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>StartHeartbeat</name>
+            <argumentList>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+	
+        <action>
+            <name>InvokeAction</name>
+            <argumentList>
+                <argument>
+                    <name>NewActionType</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>ActionType</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>SetWlanFbtConfiguration</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewFbtMode</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>FbtMode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewFbtRSSIThreshold</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>FbtRSSIThreshold</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+
+        <action>
+            <name>SetMacKickState</name>
+            <argumentList>
+                <argument>
+                    <name>NewWlanConfigurationIndex</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>WlanConfigurationIndex</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMacKickEntries</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MacKickEntries</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewMacKickTime</name>
+                    <direction>in</direction>
+                  <relatedStateVariable>MacKickTime</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorCode</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+		
+		<action>
+		<name>SetManagerUserInfo</name>
+            <argumentList>
+                <argument>
+					<name>NewManagerUser</name>
+					<direction>in</direction>
+				  <relatedStateVariable>ManagerUser</relatedStateVariable>
+				</argument>
+				<argument>
+					<name>NewManagerPassword</name>
+					<direction>in</direction>
+				  <relatedStateVariable>ManagerPassword</relatedStateVariable>
+				</argument>
+				<argument>
+					<name>NewErrorCode</name>
+					<direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+		
+		<action>
+		<name>CommitSysPara</name>
+            <argumentList>
+                <argument>
+					<name>NewParaSyncCode</name>
+					<direction>in</direction>
+				  <relatedStateVariable>ParaSyncCode</relatedStateVariable>
+				</argument>
+				<argument>
+					<name>NewErrorCode</name>
+					<direction>out</direction>
+                  <relatedStateVariable>ErrorCode</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>NewErrorDescription</name>
+                    <direction>out</direction>
+                  <relatedStateVariable>ErrorDescription</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+    </actionList>
+</scpd>

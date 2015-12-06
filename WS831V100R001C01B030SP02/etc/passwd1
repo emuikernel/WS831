@@ -1,0 +1,17 @@
+root:x:0:0:admin:/bin:/bin/sh
+nobody:(null):0:0:tr140 user:/mnt:/bin/sh
+web:x:2073:2073:web:/bin:/bin/sh
+ddnsc:x:2027:2027:ddnsc:/bin:bin/sh
+upnp:x:2189:2189:upnp:/bin:/bin/sh
+cwmp:x:2065:2065:Linux User:/bin:/bin/sh
+telnetd:x:2076:2076:telnetd:/bin:bin/sh
+console:x:2162:2162:console:/bin:bin/sh
+dhcps:x:2048:2048:dhcps:/bin:bin/sh
+xunlei:x:2678:2678:xunlei:/bin:/bin/sh
+cloudc:x:2620:2620:cloudc:/bin:/bin/sh
+pushagent:x:2637:2637:pushagent:/bin:/bin/sh
+mnt:x:1103:1103:mnt:/bin:/bin/sh
+nginx:x:2666:2666:nginx:/bin:/bin/sh
+hota:x:2621:2621:hota:/bin:/bin/sh
+upg:x:2026:2026:upg:/bin:/bin/sh
+log:x:2075:2075:log:/bin:/bin/sh

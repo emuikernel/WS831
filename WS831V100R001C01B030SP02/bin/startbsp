@@ -1,0 +1,96 @@
+#!/bin/sh
+################################################################################
+
+#busybox mount -t jffs2 /dev/mtdblock2 /config 2>/dev/null > /dev/null
+
+mknod /dev/mem c 1 1
+mknod /dev/ipcdrv c 251 0
+mknod /dev/hisec c 241 0
+mknod /dev/hipwr c 242 0
+mknod /dev/hi_voip_hlp c 10 21
+
+echo "Loading SDK modules"
+
+echo "Loading HSAN modules"
+
+insmod  /lib/extra/hi_kbasic.ko
+
+insmod  /lib/extra/hi_sdk_l0.ko
+insmod  /lib/extra/hi_sdk_l1.ko
+
+hi_cli /home/cli/api/srv/set_flowrange -v srvname qos start 384 stop 511
+hi_cli /home/cli/api/srv/set_flowrange -v srvname normal start 0 stop 383
+
+insmod  /lib/extra/hi_sdk_l2.ko
+insmod  /lib/extra/hi_kmisc.ko
+insmod  /lib/extra/hi_keth.ko
+insmod  /lib/extra/hi_kmdio.ko
+insmod  /lib/extra/hi_kphy.ko
+test -e /lib/extra/hi_kphy_mng_stub.ko && insmod  /lib/extra/hi_kphy_mng_stub.ko
+test -e /lib/extra/hi_kphy_mng_ar8035.ko && insmod /lib/extra/hi_kphy_mng_ar8035.ko
+test -e /lib/extra/hi_kphy_mng_ksz8041.ko && insmod /lib/extra/hi_kphy_mng_ksz8041.ko
+test -e /lib/extra/hi_kphy_mng_bcm50612.ko && insmod /lib/extra/hi_kphy_mng_bcm50612.ko
+test -e /lib/extra/hi_sdk_l0_dump.ko && insmod /lib/extra/hi_sdk_l0_dump.ko
+insmod  /lib/extra/hi_kcfe_res.ko
+insmod  /lib/extra/hi_kcfe_srv_mark.ko
+insmod  /lib/extra/hi_kcfe_srv_qos.ko
+test -e /lib/extra/hi_kcfe_srv_ifusb.ko && insmod  /lib/extra/hi_kcfe_srv_ifusb.ko
+#the following ko of wifi driver has been loaded at the beginning of cmsinit. 
+#test -e /lib/extra/hi_kcfe_srv_ifwifi_rt5392.ko && insmod  /lib/extra/hi_kcfe_srv_ifwifi_rt5392.ko
+#test -e /lib/extra/hi_kcfe_srv_ifwifi_bcm43217.ko && insmod  /lib/extra/hi_kcfe_srv_ifwifi_bcm43217.ko
+#test -e /lib/extra/hi_kcfe_srv_ifwifi_qualcomma9880.ko && insmod  /lib/extra/hi_kcfe_srv_ifwifi_qualcomma9880.ko
+#test -e /lib/extra/hi_kcfe_srv_ifwifi_ralink3593.ko && insmod  /lib/extra/hi_kcfe_srv_ifwifi_ralink3593.ko
+insmod  /lib/extra/hi_kcfe_fw_deliver.ko
+insmod  /lib/extra/hi_kcfe_sw_normal.ko
+insmod  /lib/extra/hi_kcfe_sw_mc.ko
+insmod  /lib/extra/hi_kcfe_lrn_br.ko
+insmod  /lib/extra/hi_kcfe_lrn_napt.ko
+insmod  /lib/extra/hi_kcfe_lrn_mc.ko
+insmod  /lib/extra/hi_kcfe_lrn_rt.ko
+insmod  /lib/extra/hi_kcfe_lrn_tnl.ko
+test -e /lib/extra/hi_kcfe_lrn_sec.ko && insmod  /lib/extra/hi_kcfe_lrn_sec.ko
+test -e /lib/extra/hi_kcfe_lrn_diagnose.ko && insmod  /lib/extra/hi_kcfe_lrn_diagnose.ko
+insmod  /lib/extra/hi_kgpio.ko
+insmod  /lib/extra/hi_kport.ko
+test -e /lib/extra/hi_ksci.ko && insmod  /lib/extra/hi_ksci.ko
+test -e /lib/extra/hi_kspi.ko && insmod  /lib/extra/hi_kspi.ko
+test -e /lib/extra/hi_khw.ko && insmod  /lib/extra/hi_khw.ko
+test -e /lib/extra/hi_kvoip.ko && insmod  /lib/extra/hi_kvoip.ko
+test -e /lib/extra/hi_kslic.ko && insmod  /lib/extra/hi_kslic.ko
+test -e /lib/extra/hi_kefuse.ko && insmod  /lib/extra/hi_kefuse.ko
+test -e /lib/extra/hi_kpower.ko && insmod  /lib/extra/hi_kpower.ko
+test -e /lib/extra/hi_kenv.ko && insmod  /lib/extra/hi_kenv.ko
+test -e /lib/extra/hi_ktest.ko && insmod  /lib/extra/hi_ktest.ko
+test -e /lib/extra/hi_kdying_gasp.ko && insmod  /lib/extra/hi_kdying_gasp.ko
+test -e /lib/extra/hi_koam.ko && insmod  /lib/extra/hi_koam.ko
+
+
+echo "Loading Huawei modules"
+test -e /lib/extra/ipcdrv.ko && insmod /lib/extra/ipcdrv.ko
+test -e /lib/extra/tri_ctl.ko && insmod /lib/extra/tri_ctl.ko
+#test -e /lib/extra/hisihwfirewall.ko && insmod /lib/extra/hisihwfirewall.ko
+
+echo "Loading realtek WLAN modules"
+test -e /lib/extra/rtl8192cd.ko && insmod  /lib/extra/rtl8192cd.ko
+test -e /lib/extra/hi_kextdev.ko && insmod  /lib/extra/hi_kextdev.ko
+echo "Ending realtek WLAN modules"
+
+echo "Loading qtm WLAN modules"
+test -e /lib/module/adf.ko && insmod /lib/module/adf.ko
+test -e /lib/module/asf.ko && insmod /lib/module/asf.ko
+test -e /lib/module/ath_hal.ko && insmod /lib/module/ath_hal.ko
+test -e /lib/module/ath_rate_atheros.ko && insmod /lib/module/ath_rate_atheros.ko
+test -e /lib/module/ath_dfs.ko && insmod /lib/module/ath_dfs.ko
+test -e /lib/module/ath_spectral.ko && insmod /lib/module/ath_spectral.ko
+test -e /lib/module/ath_dev.ko && insmod /lib/module/ath_dev.ko
+test -e /lib/module/umac.ko && insmod /lib/module/umac.ko
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd0
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd1
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd2
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd3
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd4
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd5
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd6
+test -e /sbin/hostapd && ln -s /sbin/hostapd /var/hostapd7
+echo "Ending qtm WLAN modules"
+
